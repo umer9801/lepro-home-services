@@ -10,7 +10,6 @@ import Autoplay from "embla-carousel-autoplay"
 import { useEffect } from "react"
 
 export default function HomePage() {
-  // Carousel setup
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: "start" },
     [Autoplay({ delay: 2500 })]
@@ -94,7 +93,7 @@ export default function HomePage() {
         </motion.p>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-          {[
+          {[ 
             { title: "✨ Expert Professionals", desc: "Trained and trusted staff ensuring top-quality service every time." },
             { title: "🌿 Eco-Friendly Approach", desc: "Safe, non-toxic products that care for your health and the planet." },
             { title: "🕒 Reliable Scheduling", desc: "Flexible booking and on-time arrival — your convenience first." },
@@ -155,6 +154,39 @@ export default function HomePage() {
           >
             <GlowButton asChild>
               <Link href="/services">See More →</Link>
+            </GlowButton>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 🤝 OUR PROMISE SECTION */}
+      <section className="bg-gradient-to-r from-blue-50 via-sky-50 to-cyan-50 border-y py-16">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-700 via-sky-600 to-cyan-500 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(56,189,248,0.5)] mb-6"
+          >
+            Our Promise To You
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-muted-foreground max-w-2xl mx-auto mb-10"
+          >
+            Every home we clean, every office we service, and every customer we meet is treated with the same respect, care, 
+            and attention to detail we’d give our own space. That’s the Lepro difference — quality, transparency, and satisfaction, guaranteed.
+          </motion.p>
+
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+          >
+            <GlowButton asChild>
+              <Link href="/about">Learn More About Us</Link>
             </GlowButton>
           </motion.div>
         </div>

@@ -60,12 +60,13 @@ export default function RootLayout({
                     <span className="block">
                       📞{" "}
                       <a
-                        href="tel:+18005555377"
+                        href="tel:+16137161606"
                         className="text-sky-600 hover:text-sky-800 font-medium transition-colors"
                       >
-                        +1 (800) 555-LEPRO
+                        +1 (613) 716-1606
                       </a>
                     </span>
+                    <span className="block">📍 7096 Mason St</span>
                     <span className="block">🕐 Mon–Sat, 8am–6pm</span>
                   </p>
                 </div>

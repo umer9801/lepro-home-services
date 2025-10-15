@@ -106,6 +106,47 @@ export default function AboutPage() {
           Our certifications include WHMIS awareness, eco-cleaning standards, and safe handling procedures to guarantee
           your peace of mind."
         />
+
+        {/* ✅ New Additional Sections */}
+        <Section
+          title="Why Choose Lepro?"
+          list={[
+            "Fully trained and insured cleaning experts",
+            "Customized cleaning plans for every home or business",
+            "Use of modern tools and eco-certified products",
+            "Flexible scheduling — same-day and weekend services available",
+            "Proven track record with 98% client satisfaction rate",
+          ]}
+        />
+
+        <Section
+          title="Our Vision for the Future"
+          content="Lepro is more than a cleaning company — it’s a movement towards smarter, greener living. We envision a Canada
+          where every space supports wellness, productivity, and sustainability. Our focus for the future includes
+          expanding smart-cleaning technology, introducing AI-powered scheduling, and achieving carbon-neutral operations
+          by 2030."
+        />
+
+        <Section
+          title="Meet Our Leadership"
+          content="Our leadership team brings decades of experience in hospitality, operations, and environmental management.
+          Their shared mission is simple — to deliver exceptional, eco-friendly cleaning with transparency and trust."
+        />
+
+        <Section
+          title="Client Testimonials"
+          list={[
+            "“Lepro’s team was prompt, polite, and made my condo look brand new. Highly recommend!” — Sarah M., Toronto",
+            "“They cleaned our entire office overnight and left everything spotless. Professional and efficient.” — Raj K., Calgary",
+            "“The best cleaning service we’ve had in years. Eco-friendly and affordable!” — Marie L., Vancouver",
+          ]}
+        />
+
+        <Section
+          title="Our Promise"
+          content="We promise to deliver peace of mind with every clean — ensuring that your home, office, or property receives
+          the same care we’d give our own. At Lepro, we don’t just clean — we care."
+        />
       </section>
 
       {/* CTA */}
